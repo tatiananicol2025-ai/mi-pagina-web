@@ -1,191 +1,128 @@
+/* === ESTILO PERSONAL + BOOTSTRAP === */
+
+/* Índice */
 .indice {
-  color:brown;
+  color: brown;
+  list-style-type: square;
+  padding-left: 25px;
 }
-/* === MODELO DE CAJA aplicado aquí === */
+.indice li {
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #bbb;
+}
+.indice li a {
+  text-decoration: underline;
+  color: #F58067;
+  font-weight: bold;
+}
+.navbar-brand {
+  font-size: 1rem;   
+  font-weight: normal;
+}
+
+/* Título principal */
 #titulo-principal {
-  font-size: 60px;          
-  font-family: 'Georgia', serif; 
-  color: #ff5070;              
+  font-size: 60px;
+  font-family: 'Georgia', serif;
+  color: #ff5070;
   text-align: center;
-  text-transform: uppercase;    
-  letter-spacing: 4px;          /* espacio entre letras */
-  text-shadow: 3px 3px 6px rgba(0,0,0,0.3); /* sombra para destacar */
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
   margin-top: 30px;
   margin-bottom: 30px;
-  background: linear-gradient(to right, #ffcad4, #ffe4e1); /* degradado suave */
+  background: linear-gradient(to right, #ffcad4, #ffe4e1);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(255, 80, 112, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-
-
-h2{
-    font-size: 38px;
-    font-family: cursive;
+/* Subtítulos */
+h2 {
+  font-size: 38px;
+  font-family: cursive;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px #aaa;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
-
-#imagen-de-rosa {
-    border-radius:50%;
-    border-width: 5px;
-    border-style: dashed;
-    border-color:#7b0d21;
+h3 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px #aaa;
+  letter-spacing: 2px;
 }
-
-h3{
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background-color: #ffcad4;
-}
-
-table, th, td{
-    border:1px solid black;
-    border-collapse: collapse;
-
-    tr:nth-of-type(1) >th{
-    background-color: orange;
-    
-}
-}
-
-
-    th, td{
-        padding:10px;
-    }
-
-
-p {
-    text-align: justify;         
-    line-height: 1.8;            
-    word-spacing: 3px;            
-    text-shadow: 1px 1px 2px #ccc;
-    margin-bottom: 15px;          
-}
-
-
-h2, h3, h4 {
-    text-align: center;           
-    text-decoration: underline;  
-    text-shadow: 2px 2px 4px #aaa;
-    letter-spacing: 2px;          
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-
-ul.indice {
-    list-style-type: square;    
-    padding-left: 25px;
-}
-
-ul.indice li a {
-    text-decoration: underline;
-    color: #F58067;
-    font-weight: bold;
-}
-
-
-ul.indice li {
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px #bbb;
-    text-decoration: none;        
-}
-
-
-ul.indice li a {
-    text-decoration: underline;  
-    color: #F58067;
-    font-weight: bold;
-}
-
-
 h4 {
-    text-align: left;
-    font-size: 20px;
-    text-decoration: line-through; 
-    color: #ff8d50;
-    text-shadow: 1px 1px 3px #aaa; 
-    margin-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+  text-decoration: line-through;
+  color: #ff8d50;
+  text-shadow: 1px 1px 3px #aaa;
+  margin-bottom: 10px;
 }
+
+/* Texto */
+p {
+  font-family: 'Helvetica', sans-serif;
+  text-align: justify;
+  line-height: 1.8;
+  word-spacing: 3px;
+  text-shadow: 1px 1px 2px #ccc;
+  margin-bottom: 15px;
+}
+
+/* Fondo general */
+body {
+  background-color: #ffcad4;
+}
+
+/* Imágenes */
 img {
-    display: block;       
-    margin: 0 auto;        
-    text-align: center;   
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
-
+#imagen-de-rosa {
+  border-radius: 50%;
+  border: 5px dashed #7b0d21;
+}
 img[alt="lirios blancos"] {
-    display: block;
-    margin: 20px auto;
-    border: 8px double #ff8d50;  
-    border-radius: 15px;          
-    box-shadow: 0 0 15px rgba(255, 141, 80, 0.6); 
-    padding: 5px;
-    background-color: #fffaf0;    
+  margin: 20px auto;
+  border: 8px double #ff8d50;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 141, 80, 0.6);
+  padding: 5px;
+  background-color: #fffaf0;
 }
-
-
 img[alt="Girasoles"] {
-    display: block;
-    margin: 20px auto;
-    border: 10px groove #f5c542;  
-    border-radius: 20px;         
-    box-shadow: 0 0 20px rgba(245, 197, 66, 0.7); 
-    padding: 6px;
-    background-color: #ffffe0;    
+  margin: 20px auto;
+  border: 10px groove #f5c542;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(245, 197, 66, 0.7);
+  padding: 6px;
+  background-color: #ffffe0;
 }
 
-/* Punto 1:(nav) */
-
-nav {
-  background-color: #f4c2c2;
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* === POSICIONAMIENTO aplicado en el menú === */
-nav li {
-  float: left;
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/*pseudo-clase */
-nav ul li a:hover {
-  background-color: #ff69b4;
-  color: white;
-}
-.flor:hover {
-  background-color: #fff0f5;
-  border: 2px solid #ff5070;
-}
-
-/* agrupación de selectores tipo id y class */
-ul.indice, .destacado {
-  background-color: #fff0f5;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-/*(conbinar selectores y clases) */
-
-#introduccion, .destacado {
-  font-style: italic;
+/* Secciones */
+#introduccion,
+#Historia\ y\ origen,
+#Uso\ en\ el\ arte\ y\ cultura,
+#Curiosidades {
   background-color: #ffe4e1;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(200, 100, 100, 0.3);
 }
+
+/* Destacados */
 .destacado {
   font-weight: bold;
   color: crimson;
@@ -195,79 +132,8 @@ ul.indice, .destacado {
   text-align: center;
   margin-top: 10px;
 }
-#introduccion,
-#Historia\ y\ origen,
-#Uso\ en\ el\ arte\ y\ cultura,
-#Curiosidades {
-  background-color: #ffe4e1; 
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(200, 100, 100, 0.3);
-}
 
-#encuesta {
-  background-color: #fff0f5;
-  padding: 15px;
-  border: 2px dashed #ff5070;
-  border-radius: 10px;
-  margin: 20px 0;
-  text-align: center;
-}
-
-#encuesta label {
-  display: block;
-  margin: 8px 0;
-  font-weight: bold;
-  color: #7b0d21;
-}
-
-
-/* selectores descendientes */
-section ul li {
-  background-color: #fff0f5;
-  border-left: 4px solid #ff8aa1;
-  padding: 5px;
-  margin-bottom: 8px;
-  font-style: inherit;
-}
-
-/*pie de página, */
-footer {
-  background-color: #f58067;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  border-top: 5px solid #ffa2b3;
-  box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
-}
-
-footer p {
-  margin: 5px 0;
-  font-family: 'Helvetica', sans-serif;
-}
-
-footer img {
-  margin-top: 10px;
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 10px rgba(255,255,255,0.6);
-}
-
-#interactivo {
-  background-color: #fffaf0;
-  padding: 20px;
-  border-radius: 15px;
-  margin: 30px 0;
-  box-shadow: 0 0 12px rgba(200, 100, 100, 0.3);
-}
-
-#interactivo h2 {
-  text-align: center;
-  color: #ff5070;
-  font-size: 32px;
-  margin-bottom: 15px;
-}
+/* Encuesta */
 #encuesta {
   background-color: #ffe4e1;
   padding: 15px;
@@ -276,13 +142,14 @@ footer img {
   margin-bottom: 20px;
   text-align: center;
 }
-
 #encuesta label {
   display: block;
   margin: 8px 0;
   font-weight: bold;
   color: #7b0d21;
 }
+
+/* Tabla */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -290,14 +157,12 @@ table {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 th {
   background-color: #ff8d50;
   color: white;
   font-size: 18px;
   padding: 10px;
 }
-
 td {
   text-align: center;
   padding: 10px;
@@ -306,43 +171,7 @@ td {
   border: 1px solid #ccc;
 }
 
-footer {
-  background-color: #f58067;
-  color: white;
-  padding: 20px;
-  border-top: 5px solid #ff5070;
-  box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
-}
-
-.footer-contenido {
-  display: flex;
-  justify-content: space-between; /* texto a la izquierda, foto a la derecha */
-  align-items: center;
-}
-
-.footer-texto p {
-  margin: 5px 0;
-  font-family: 'Helvetica', sans-serif;
-}
-
-.footer-imagen img {
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 10px rgba(255,255,255,0.6);
-}
-
-/* === POSICIONAMIENTO aplicado aquí === */
-/* Posicionamiento llamativo para el título */
-#titulo-principal {
-  position: sticky;   /*Esto hace que quede fijo arriba*/
-
-  top: 0;
-  z-index: 1000;
-}
-
-/* === MODELO DE CAJA aplicado aquí === */
-
-/* Caja destacada para cada flor */
+/* Flor (card personalizada) */
 .flor {
   border: 3px solid #ff5070;
   padding: 20px;
@@ -351,4 +180,103 @@ footer {
   background-color: #fffaf0;
   box-shadow: 0 0 15px rgba(255, 80, 112, 0.4);
 }
+.flor:hover {
+  background-color: #fff0f5;
+  border: 2px solid #ff5070;
+}
 
+/* Footer */
+footer {
+  background-color: #f58067;
+  color: white;
+  padding: 20px;
+  border-top: 5px solid #ff5070;
+  box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
+}
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-texto p {
+  margin: 5px 0;
+  font-family: 'Helvetica', sans-serif;
+}
+.footer-imagen img {
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* Título principal */
+#titulo-principal {
+  font-size: 50px;
+  font-family: 'Georgia', serif;
+  font-weight: bold;            /* negrilla */
+  color: #ff5070;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #ffcad4, #ffe4e1);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 80, 112, 0.5);
+}
+
+/* Subtítulos h2 */
+h2 {
+  font-size: 42px;
+  font-family: 'Trebuchet MS', cursive;
+  font-weight: bold;
+  color: #f58067;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 3px 3px 6px #aaa;
+  letter-spacing: 3px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* Subtítulos h3 */
+h3 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ff8d50;
+  text-align: center;
+  text-shadow: 2px 2px 5px #bbb;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Subtítulos h4 */
+h4 {
+  font-size: 22px;
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  color: #ff5070;
+  text-align: left;
+  text-shadow: 2px 2px 4px #aaa;
+  margin-bottom: 12px;
+}
+
+/* Bloque interactivo sorpresa */
+#interactivo {
+  background-color: #fffaf0;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 30px 0;
+  box-shadow: 0 0 15px rgba(200, 100, 100, 0.3);
+}
+
+/* Listas con línea vertical rosadita */
+section ul li {
+  background-color: #fff0f5;
+  border-left: 4px solid #ff8aa1;   /* línea vertical rosadita */
+  padding: 8px;
+  margin-bottom: 10px;
+  font-style: inherit;
+}
